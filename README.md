@@ -4,7 +4,7 @@ Temporal Anti-Aliasing with Unity(2021.3) SRP (Scriptable Render Pipeline)
   * Pseudorandom Jitter
   * Motion vector
   * Color Variance Clipping in YCoCg space. ( in certain scenarios RGB clipping resulting the image being slightly more reddish)
-* Deferred Shading
+* Simple Deferred Shading
 * SRP
 
 
