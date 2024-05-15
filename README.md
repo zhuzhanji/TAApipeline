@@ -8,7 +8,8 @@ Temporal Anti-Aliasing with Unity(2021.3) SRP (Scriptable Render Pipeline)
 * SRP
 
 * Result
-** No TAA vs TAA
+  
+  * No TAA vs TAA
   
 <img width="332" alt="Screenshot 2024-05-14 at 08 05 57" src="https://github.com/zhuzhanji/TAApipeline/assets/37281560/60b2b747-54d9-453f-822a-821c84a0bc34">
 
