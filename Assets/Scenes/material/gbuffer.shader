@@ -71,7 +71,9 @@ Shader "TaaPP/gbuffer"
                 float4x4 jitterMat = UNITY_MATRIX_P;
 	            //jitterMat[2][0] += _Jitter.x;
 	            //jitterMat[2][1] += _Jitter.y;
-                float4 posout = mul(mul(mul(jitterMat , UNITY_MATRIX_V), unity_ObjectToWorld), pos);
+                //float4 posout = mul(mul(mul(jitterMat , UNITY_MATRIX_V), unity_ObjectToWorld), pos);
+
+                float4 posout = UnityObjectToClipPos(pos);
                 posout /= posout.w;
                 posout.xy += _Jitter;
                 return posout;
@@ -84,7 +86,8 @@ Shader "TaaPP/gbuffer"
                 o.normal = UnityObjectToWorldNormal(v.normal);
                 o.vertex = taa_vert(v.vertex);
 
-                o.nowScreenPosition = mul(mul(mul(UNITY_MATRIX_P,  UNITY_MATRIX_V), unity_ObjectToWorld) , v.vertex);
+                //o.nowScreenPosition = mul(mul(mul(UNITY_MATRIX_P,  UNITY_MATRIX_V), unity_ObjectToWorld) , v.vertex);
+                o.nowScreenPosition = UnityObjectToClipPos(v.vertex);
                 o.preScreenPosition = mul(mul(_LastVP , unity_ObjectToWorld) , v.vertex);
 
                 return o;
@@ -106,7 +109,7 @@ Shader "TaaPP/gbuffer"
 	            float2 prePos = ((i.preScreenPosition.xy / i.preScreenPosition.w) * 0.5 + 0.5);
 	            float2 gVelo = newPos - prePos;
 
-                GT2 = float4(gVelo,0,1);
+                GT2 = float4(gVelo.x, -gVelo.y, 0,1);
                 GT3 = float4(1,0,0,1);
             }
             ENDCG

@@ -1,11 +1,10 @@
 ﻿<Properties StartupConfiguration="{E5C236EE-8D19-B020-3CF3-DE28524ED02F}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scenes/script/TaaPipeline.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scenes/material/gbuffer.shader">
     <Files>
-      <File FileName="Assets/Scenes/material/gbuffer.shader" Line="59" Column="1" />
-      <File FileName="Assets/Scenes/material/lightpass.shader" Line="1" Column="1" />
-      <File FileName="Assets/Scenes/script/rotate.cs" />
-      <File FileName="Assets/Scenes/material/taapass.shader" Line="5" Column="28" />
-      <File FileName="Assets/Scenes/script/TaaPipeline.cs" Line="197" Column="51" />
+      <File FileName="Assets/Scenes/material/gbuffer.shader" Line="118" Column="35" />
+      <File FileName="Assets/Scenes/material/lightpass.shader" Line="34" Column="28" />
+      <File FileName="Assets/Scenes/material/taapass.shader" Line="168" Column="47" />
+      <File FileName="Assets/Scenes/script/TaaPipeline.cs" Line="107" Column="75" />
       <File FileName="Assets/Scenes/script/taa_behaviour.cs" />
     </Files>
     <Pads>
@@ -14,23 +13,26 @@
           <Node name="TAApipeline" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scenes" expanded="True">
-                <Node name="material" expanded="True" />
-                <Node name="script" expanded="True">
-                  <Node name="TaaPipeline.cs" selected="True" />
+                <Node name="material" expanded="True">
+                  <Node name="gbuffer.shader" selected="True" />
                 </Node>
+                <Node name="script" expanded="True" />
               </Node>
             </Node>
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3f6fcc80-6b5d-468e-8142-933ba26be216" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="cfb9855b-20be-47d2-b972-1d11c9498bf9" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/liuyang/TAApipeline/Assets/Scenes/script/TaaPipeline.cs" relfile="Assets/Scenes/script/TaaPipeline.cs" line="82" column="1" />
+      <Breakpoint file="/Users/liuyang/TAApipeline/Assets/Scenes/script/TaaPipeline.cs" relfile="Assets/Scenes/script/TaaPipeline.cs" line="84" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
